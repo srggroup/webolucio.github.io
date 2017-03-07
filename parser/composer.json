@@ -1,0 +1,17 @@
+{
+	"name": "srggroup/webolucio_doc_parser",
+	"config": {
+		"discard-changes": true
+	},
+	"authors": [
+		{
+			"name": "srggroup",
+			"email": "dev@srg.hu"
+		}
+	],
+	"require": {
+		"cebe/markdown": "^1.1"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
