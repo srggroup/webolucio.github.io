@@ -54,4 +54,36 @@ class Parser extends \cebe\markdown\Markdown {
 		return array($label, $str); //Return label and string
 	}
 	
+	public function findIntroSummary($text){
+		$this->prepare();
+		
+		if (ltrim($text) === '') {
+			return '';
+		}
+		
+		$text = str_replace(["\r\n", "\n\r", "\r"], "\n", $text);
+		
+		$this->prepareMarkers($text);
+		
+		$absy = $this->parseBlocks(explode("\n", $text));
+		
+		$hrCounter = 0;
+		
+		foreach($absy as $key => $elem){
+			if(!empty($elem[0]) && $elem[0] == 'hr') $hrCounter++;
+			
+			if($hrCounter === 2){
+				if(isset($absy[$key+1])){
+					$nextElem = $absy[$key+1];
+					if(!empty($nextElem[0]) && $nextElem[0] == 'paragraph'){
+						$str = $this->renderparagraph($nextElem);
+					}
+				}
+				break;
+			}
+		}
+		
+		return $str;
+	}
+	
 }

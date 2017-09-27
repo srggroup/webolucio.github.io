@@ -2,14 +2,333 @@
 
 entries:
 - title: sidebar
-  product: Administration area
+  product: Adminisztrációs felület
   folders:
 
-  - title: Settings
+  - title: Beállítások
     output: web, pdf
     folderitems:
 
-    - title: General
+    - title: Általános
       url: /cmsadmin_settings_general.html
+      output: web, pdf
+
+    - title: Rendszer
+      url: /cmsadmin_settings_system.html
+      output: web, pdf
+
+    - title: Menük
+      url: /cmsadmin_settings_menus.html
+      output: web, pdf
+
+    - title: Címkék
+      url: /cmsadmin_settings_tags.html
+      output: web, pdf
+
+    - title: Hozzászólások
+      url: /cmsadmin_settings_comments.html
+      output: web, pdf
+
+    - title: Hibaoldalak
+      url: /cmsadmin_settings_errorpages.html
+      output: web, pdf
+
+  - title: Oldakezelő
+    output: web, pdf
+    folderitems:
+
+    - title: Oldalkezelő
+      url: /cmsadmin_pages_list.html
+      output: web, pdf
+
+      subfolders:
+      - title: Oldal szerkesztése
+        output: web, pdf
+        subfolderitems:
+
+        - title: Általános
+          url: /cmsadmin_pages_general.html
+          output: web, pdf
+
+        - title: Tartalom
+          url: /cmsadmin_pages_content.html
+          output: web, pdf
+
+        - title: SEO
+          url: /cmsadmin_pages_seo.html
+          output: web, pdf
+
+        - title: Rendszer
+          url: /cmsadmin_pages_system.html
+          output: web, pdf
+
+        - title: Jogosultságok
+          url: /cmsadmin_pages_permissions.html
+          output: web, pdf
+
+  - title: Sablonok
+    output: web, pdf
+    folderitems:
+
+    - title: Sablonok
+      url: /cmsadmin_layouts_list.html
+      output: web, pdf
+
+      subfolders:
+      - title: Sablon szerkesztése
+        output: web, pdf
+        subfolderitems:
+
+        - title: Általános
+          url: /cmsadmin_layouts_general.html
+          output: web, pdf
+
+        - title: Tartalom
+          url: /cmsadmin_layouts_content.html
+          output: web, pdf
+
+  - title: Template-ek
+    output: web, pdf
+    folderitems:
+
+    - title: Template-ek
+      url: /cmsadmin_templates_list.html
+      output: web, pdf
+
+    - title: Template szerkesztése
+      url: /cmsadmin_templates_edit.html
+      output: web, pdf
+
+  - title: Jogosultságok
+    output: web, pdf
+    folderitems:
+
+    - title: Jogosultságok
+      url: /cmsadmin_permissions.html
+      output: web, pdf
+
+  - title: Felhasználók
+    output: web, pdf
+    folderitems:
+
+    - title: Felhasználók
+      url: /cmsadmin_users_list.html
+      output: web, pdf
+
+    - title: Felhasználó szerkesztése
+      url: /cmsadmin_users_edit.html
+      output: web, pdf
+
+    - title: Szerepek
+      url: /cmsadmin_roles_list.html
+      output: web, pdf
+
+    - title: Szerep szerkesztése
+      url: /cmsadmin_roles_edit.html
+      output: web, pdf
+
+  - title: Form eredmények
+    output: web, pdf
+    folderitems:
+
+    - title: Form eredmények
+      url: /cmsadmin_formresults.html
+      output: web, pdf
+
+  - title: Hírlevelek
+    output: web, pdf
+    folderitems:
+
+    - title: Hírlevelek
+      url: /cmsadmin_newsletters_list.html
+      output: web, pdf
+
+      subfolders:
+      - title: Hírlevélcsoport szerkesztése
+        output: web, pdf
+        subfolderitems:
+
+        - title: Általános
+          url: /cmsadmin_newsletters_general.html
+          output: web, pdf
+
+        - title: Form integráció
+          url: /cmsadmin_newsletters_form.html
+          output: web, pdf
+
+        - title: E-mail címek
+          url: /cmsadmin_newsletters_email.html
+          output: web, pdf
+
+        - title: Levelek
+          url: /cmsadmin_newsletters_mails.html
+          output: web, pdf
+
+        - title: Küldés
+          url: /cmsadmin_newsletters_send.html
+          output: web, pdf
+
+  - title: Fájlkezelő
+    output: web, pdf
+    folderitems:
+
+    - title: Fájlkezelő
+      url: /cmsadmin_filemanager.html
+      output: web, pdf
+
+    - title: Fájl szerkesztése
+      url: /cmsadmin_filemanager_edit.html
+      output: web, pdf
+
+  - title: Hozzászólások
+    output: web, pdf
+    folderitems:
+
+    - title: Hozzászólások
+      url: /cmsadmin_comments.html
+      output: web, pdf
+
+  - title: Napló
+    output: web, pdf
+    folderitems:
+
+    - title: Napló
+      url: /cmsadmin_logs.html
+      output: web, pdf
+
+  - title: Tartalomtípusok
+    output: web, pdf
+    folderitems:
+
+    - title: Tartalomtípusok általános beállításai
+      url: /cmsadmin_contenttypes.html
+      output: web, pdf
+
+    - title: Szöveges tartalom
+      url: /cmsadmin_stat.html
+      output: web, pdf
+
+    - title: Kép
+      url: /cmsadmin_image.html
+      output: web, pdf
+
+      subfolders:
+      - title: Űrlap
+        output: web, pdf
+        subfolderitems:
+
+        - title: Űrlap
+          url: /cmsadmin_form.html
+          output: web, pdf
+
+        - title: Űrlap mezők
+          url: /cmsadmin_form_fieldlist.html
+          output: web, pdf
+
+        - title: Űrlap mező szerkesztése
+          url: /cmsadmin_form_fieldedit.html
+          output: web, pdf
+
+    - title: Galéria
+      url: /cmsadmin_gallery.html
+      output: web, pdf
+
+      subfolders:
+      - title: Bejegyzések
+        output: web, pdf
+        subfolderitems:
+
+        - title: Bejegyzések
+          url: /cmsadmin_posts.html
+          output: web, pdf
+
+        - title: Bejegyzések listája
+          url: /cmsadmin_posts_entrylist.html
+          output: web, pdf
+
+        - title: Bejegyzések szerkesztése
+          url: /cmsadmin_posts_entryedit.html
+          output: web, pdf
+
+    - title: Naptár
+      url: /cmsadmin_calendar.html
+      output: web, pdf
+
+
+    - title: Menü
+      url: /cmsadmin_menu.html
+      output: web, pdf
+
+
+    - title: Breadcrumb
+      url: /cmsadmin_breadcrumb.html
+      output: web, pdf
+
+
+    - title: Keresés
+      url: /cmsadmin_searchform.html
+      output: web, pdf
+
+
+    - title: Keresési találatok
+      url: /cmsadmin_searchresults.html
+      output: web, pdf
+
+
+    - title: Oldalcím
+      url: /cmsadmin_pagetitle.html
+      output: web, pdf
+
+
+    - title: Oldaltérkép
+      url: /cmsadmin_sitemap.html
+      output: web, pdf
+
+
+    - title: Nyelvválasztó
+      url: /cmsadmin_langselector.html
+      output: web, pdf
+
+
+    - title: Letöltések
+      url: /cmsadmin_downloads.html
+      output: web, pdf
+
+
+    - title: Anchor-linkek
+      url: /cmsadmin_anchor.html
+      output: web, pdf
+
+
+    - title: Bejelentkezés
+      url: /cmsadmin_login.html
+      output: web, pdf
+
+
+    - title: Regisztráció
+      url: /cmsadmin_reg.html
+      output: web, pdf
+
+
+    - title: Felhasználói linkek
+      url: /cmsadmin_accountlinks.html
+      output: web, pdf
+
+
+    - title: Adatmódosítás
+      url: /cmsadmin_accountdata.html
+      output: web, pdf
+
+
+    - title: Új jelszó
+      url: /cmsadmin_forgot.html
+      output: web, pdf
+
+  - title: Általános tudnivalók
+    output: web, pdf
+    folderitems:
+
+    - title: Általános tudnivalók
+      url: /cmsadmin_general.html
       output: web, pdf
 

@@ -44,16 +44,33 @@ function searchId($id = null){
 				$result['link'] = 'http://'.$_SERVER['SERVER_NAME'].'/'.$m[1].'#'.$id;
 			}
 			
-			$content = file_get_contents($file);
 			$parser = new Parser();
-			list($label, $str) = $parser->getIdBlock($content, $id);
 			
-			$result['text'] = !empty($str) ? $str : '';
-			$result['label'] = !empty($label) ? $label : '';
+			if(preg_match('/hash:[\s]*'.$id.'/', $contents, $m)){
+				//The id was found in the title section, so the whole page is matched
+				
+				//Find label
+				if(preg_match('/title:[\s]*(.*)/', $contents, $m)){
+					$result['label'] = $m[1];
+				}
+				
+				//Find summary text
+				$result['text'] = $parser->findIntroSummary($contents);
+				
+			} else {
+				
+				list($label, $str) = $parser->getIdBlock($contents, $id);
+				
+				$result['text'] = !empty($str) ? $str : '';
+				$result['label'] = !empty($label) ? $label : '';
+				
+			}
 			
 			if(!empty($result['link']) && !empty($result['text'])){
 				$results[] = $result;
 			}
+			
+			
 		}
 	}
 	
