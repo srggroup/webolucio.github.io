@@ -33,6 +33,10 @@ entries:
       url: /cmsadmin_settings_errorpages.html
       output: web, pdf
 
+    - title: Átirányítások, alias-ok
+      url: /cmsadmin_settings_routes.html
+      output: web, pdf
+
   - title: Oldakezelő
     output: web, pdf
     folderitems:
@@ -248,6 +252,108 @@ entries:
 
         - title: Bejegyzések szerkesztése
           url: /cmsadmin_posts_entryedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Árazás
+        output: web, pdf
+        subfolderitems:
+
+        - title: Árazás
+          url: /cmsadmin_pricing.html
+          output: web, pdf
+
+        - title: Csomagok listája
+          url: /cmsadmin_pricing_itemlist.html
+          output: web, pdf
+
+        - title: Csomag szerkesztése
+          url: /cmsadmin_pricing_itemedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Accordion
+        output: web, pdf
+        subfolderitems:
+
+        - title: Accordion
+          url: /cmsadmin_listingaccordion.html
+          output: web, pdf
+
+        - title: Elemek listája
+          url: /cmsadmin_listingaccordion_itemlist.html
+          output: web, pdf
+
+        - title: Elem szerkesztése
+          url: /cmsadmin_listingaccordion_itemedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Számláló
+        output: web, pdf
+        subfolderitems:
+
+        - title: Számláló
+          url: /cmsadmin_listingcounter.html
+          output: web, pdf
+
+        - title: Számláló elemek listája
+          url: /cmsadmin_listingcounter_itemlist.html
+          output: web, pdf
+
+        - title: Számláló elem szerkesztése
+          url: /cmsadmin_listingcounter_itemedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Térkép
+        output: web, pdf
+        subfolderitems:
+
+        - title: Térkép
+          url: /cmsadmin_listingmap.html
+          output: web, pdf
+
+        - title: Térkép jelölők listája
+          url: /cmsadmin_listingmap_itemlist.html
+          output: web, pdf
+
+        - title: Térkép jelölő szerkesztése
+          url: /cmsadmin_listingmap_itemedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Fülek
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fülek
+          url: /cmsadmin_listingtab.html
+          output: web, pdf
+
+        - title: Fülek listája
+          url: /cmsadmin_listingtab_itemlist.html
+          output: web, pdf
+
+        - title: Fül szerkesztése
+          url: /cmsadmin_listingtab_itemedit.html
+          output: web, pdf
+
+      subfolders:
+      - title: Ajánló
+        output: web, pdf
+        subfolderitems:
+
+        - title: Ajánló
+          url: /cmsadmin_listingtestimonial.html
+          output: web, pdf
+
+        - title: Ajánló elemek listája
+          url: /cmsadmin_listingtestimonial_itemlist.html
+          output: web, pdf
+
+        - title: Ajánló elem szerkesztése
+          url: /cmsadmin_listingtestimonial_itemedit.html
           output: web, pdf
 
     - title: Naptár

@@ -66,6 +66,10 @@ A mező „placeholder” attribútuma. Az itt megadott szöveg a szövegmezőbe
 
 A mező alapértelmezett értéke. A [placeholder](cmsadmin_form_fieldedit.html#FormField-InputPlaceholder)-rel ellentétben nem csak akkor jelenik meg, amikor a mező üres, hanem az elküldött űrlapban is szerepelni fog ez az érték, ha a felhasználó nem változtatja meg.
 
+## Mező elrejtése a form eredményekben {#FormField-InputHideFromResults}
+
+Ha be van pipálva, a mező értéke nem lesz megjelenítve a [form eredmények](cmsadmin_formresults.html) alatt.
+
 ## Leírás {#FormField-InputDesc}
 
 A mező szövegszerkesztővel formázható leírása, amely a frontenden is megjelenik.
@@ -85,17 +89,18 @@ A validátor a listában lévő szerkesztés gombra kattintva szerkeszthető.
 A validátorok típusai:  
 Bizonyos validátorok nem érhetők el minden mező esetén, ezek csak akkor jelennek meg, ha az adott [mezőtípus](cmsadmin_form_fieldedit.html#FormField-InputType)-hoz hozzárendelhetőek.
 * Nem lehet üres: A mezőnek valamilyen értéket tartalmaznia kell (vagy pl. a jelölőnégyzetet be kell pipálni).
-* Minden más validátor csak kitöltött mezőket ellenőriz, vagyis ha a kitöltetlen mező hibásnak tekintendő, ezt a validátort hozzá kell adni.
+Minden más validátor csak kitöltött mezőket ellenőriz, vagyis ha a kitöltetlen mező hibásnak tekintendő, ezt a validátort hozzá kell adni.
 * Csak betűk és számok: A mező csak betűket és számokat tartalmazhat.
 * Csak betűk: A mező csak betűket tartalmazhat.
-* Két érték között: A mező értéke két érték között kell hogy legyen. A határértékek az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) adhatók meg. Amennyiben az értéke egyenlő valamelyik határértékkel, a mező értéke helyes lesz.
-* Dátum: A mező értéke csak abban az esetben lesz helyes, ha olyan formátumban van, ami megfelel a [standard](http://php.net/manual/en/datetime.createfromformat.php)-eknek
 * Csak számok: A mező értéke csak számokból állhat
+* Dátum: A mező értéke csak abban az esetben lesz helyes, ha olyan formátumban van, ami megfelel a [standard](http://php.net/manual/en/datetime.createfromformat.php)-eknek
 * E-mail cím: A mező értéke valós e-mail cím kell, hogy legyen (a megadott érték formátuma meg kell, hogy feleljen az e-mailcímek szabványos formátumának)
+* Szöveg hossza: Az érték csak akkor lesz helyes, ha a szöveg hossza az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) megadott értékek között van.
 * Nagyobb, mint: A mező értéke nagyobb kell, hogy legyen mint az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) megadott érték. Ha a mező értéke egyenlő a megadott opcióval, az érték hibás lesz.
 * Kisebb, mint: A mező értéke kisebb kell, hogy legyen mint az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) megadott érték. Ha a mező értéke egyenlő a megadott opcióval, az érték hibás lesz.
+* Két érték között: A mező értéke két érték között kell hogy legyen. A határértékek az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) adhatók meg. Amennyiben az értéke egyenlő valamelyik határértékkel, a mező értéke helyes lesz.
+* Egyező mezők: A mező értéke akkor lesz helyes, ha megegyezik az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) kiválasztható másik mező értékével.
 * Reguláris kifejezés: Egy szabványos [reguláris kifejezéssel](https://hu.wikipedia.org/wiki/Reguláris_kifejezés) lesz ellenőrizve a mező értéke.
-* Szöveg hossza: Az érték csak akkor lesz helyes, ha a szöveg hossza az [opciókban](cmsadmin_form_fieldedit.html#FormField-InputValidationOption) megadott értékek között van.
 * Egyedi függvény: Az érték egy, a „Datamap” fájlban megadott függvénnyel lesz ellenőrizve.
 * Kötelező kiválasztani: A mező megadott értékei közül kötelező választani egyet.
 * Többszörös kiválasztás: A mező megadott értékei közül a megadott határértékek közötti számú opciót kell kiválasztani.
@@ -162,6 +167,10 @@ Captcha típus esetén itt választható ki, hogy milyen típusú captcha ellen�
 ## Feltöltés mappája {#FormField-InputUploadFolder}
 
 „Fájl” típusú mező esetén itt választható ki a fájlkezelőből az a mappa, ahova a rendszer menteni fogja a feltöltött fájlokat.
+
+## Több fájl kiválasztható {#FormField-InputFileMultiple}
+
+„Fájl” típusú mező esetén állítható, hogy csak egy, vagy több fájl is kiválasztható legyen.
 
 
 

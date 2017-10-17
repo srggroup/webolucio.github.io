@@ -27,6 +27,10 @@ Opcionálisan megadható egy „vég dátum”, mely abban az esetben hasznos, h
 
 ## Speciális beállítások {#PostEntry-FieldsetSpecial}
 
+### Egyedi értékelés {#PostEntry-InputIntroOnly}
+
+A jelölődobozzal kikapcsolható a kifejtőoldal az adott bejegyzéshez, így az csak az a bejegyzések listaoldalán fog megjelenni, külön URL-el nem elérhető. A jelölődoboznak csak akkor van hatása, ha a tartalomnál a [kifejtőoldalak](cmsadmin_posts.html#Post-InputIntro) be vannak kapcsolva.
+
 ### Egyedi értékelés {#PostEntry-InputManualRating}
 
 Amennyiben a mező ki van töltve, a frontenden a bejegyzés értékeléseként nem a valós, felhasználói értékelések alapján kalkulált átlag jelenik meg, hanem az itt megadott érték.
@@ -46,6 +50,10 @@ Egyedi „meta description”. Ha üresen hagyjuk, a tartalomblokkban beállíto
 ### Meta keywords {#PostEntry-InputMetaKeywords}
 
 Egyedi „meta keywords”. Ha üresen hagyjuk, a tartalomblokkban beállított meta keywords-öt fogja beszúrni a rendszer.
+
+### Extra class {#PostEntry-InputClass}
+
+Egyedi CSS class.
 
 ### Szerző {#PostEntry-InputAuthor}
 

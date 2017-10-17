@@ -21,11 +21,7 @@ A sablon slug-ja. A slug CSS class-ként is viselkedik.
 
 A jelölőnégyzettel megadható, hogy az éppen szerkesztett sablon legyen az alapértelmezett új oldalak, és hibaoldalak esetén.
 
-## Típus {#Layout-InputType}
+## Régiók {#Layout-InputRegions}
 
-Itt lehet beállítani, hogy a kiválasztott sablon melyik variációt használja a rendszerben elérhető régió-összeállításokból. Az elérhető típusok:
-* Fejléc, Tartalom, Lábléc
-* Fejléc, Tartalom, Bal oldalsáv, Lábléc
-* Fejléc, Tartalom, Jobb oldalsáv, Lábléc
-* Fejléc, Bal oldalsáv, Tartalom, Jobb oldalsáv, Lábléc
+A sablonhoz tartozó régiók ebben a listában adhatók meg. A régiók drag&drop-pal sorrendezhetők, megadható a nevük, valamint slug-juk. A 'content' slug-gal rendelkező régió nem törölhető, mivel az a rendszer működéséhez szükséges.
 

@@ -37,9 +37,17 @@ A blokkra mutató horgony (anchor) egyedi neve. Amennyiben ez a mező nincs kit�
 
 A blokknak az adminisztrátorok számára beszédesebb, könnyebben megkülönböztethető nevet is adhatunk. Ez az egyedi név csak az admin felületen lesz látható, a frontenden továbbra is a beállított [megjelenített név](cmsadmin_contenttypes.html#Content-InputName) fog szerepelni.
 
+### Admin infó szöveg {#Content-InputBlockAdminInfo}
+
+Egy csak az adminisztrációs felületen megjelenő szöveg, mely a tartalomkezelőknek hasznos információkat, jegyzeteket tartalmazhat. Amennyiben ki van töltve, a tartalom szerkesztőoldalán egy felső sávban is megjelenik.
+
 ### Mutassa a nevet {#Content-InputBlockShowName}
 
 A jelölőnégyzet bepipálása esetén a blokk neve meg fog jelenni a frontendes kiíratásban. A blokk neve alapértelmezetten rejtve marad.
+
+### Exportálás {#Content-InputExport}
+
+A gombra kattintva a tartalom fontosabb beállításai egy JSON fájlba exportálhatók. Ez a fájl csak azokat a beállításokat tartalmazza, melyek nem függnek az aktuális rendszer egyéb tartalmaitól (pl. Mellékletek, belső linkek, stb.). Így az exportált fájlban meglévő beállítások egy másik rendszerbe is importálhatók.
 
 ## Jogosultságok {#Content-TabPermission}
 A tartalomblokk frontend és admin jogosultságai állíthatók be ezen a fülön. Szabályozhatjuk az adminisztrátorok szerkesztési és törlési jogát, a frontenden pedig elrejthetjük a blokkot bizonyos felhasználók elől.

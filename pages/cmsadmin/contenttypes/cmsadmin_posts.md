@@ -93,6 +93,10 @@ Ez a mező abban az esetben jelenik meg, ha a „Típus” mező értéke „Kiv
 
 Kiválaszthatunk egyet a tartalomtípusban megadott tulajdonságok közül, amely alapján a listaoldalon csoportokba rendezhetőek a bejegyzések.
 
+### URL prefix tulajdonság {#Post-InputPrefixBy}
+
+Ha ki van választva egy tulajdonság, akkor annak a slug-jával lesz kiegészíve a bejegyzések URL-je. Példa: /[bejegyzés URL]/[tulajdonság slug-ja]/[bejegyzés slug-ja]
+
 ## Speciális {#Post-TabSpecial}
 
 ### Megjelenített bejegyzések száma {#Post-InputLimit}
@@ -228,6 +232,10 @@ A szűrő mező megjelenített neve.
 ##### Slug {#Post-InputFilterSlug}
 
 A szűrő mező slug-ja, valamint a mező „name” attribútuma.
+
+##### Class {#Post-InputFilterClass}
+
+Egyedi CSS class-ok.
 
 ##### Tulajdonságok {#Post-InputFilterProperty}
 
