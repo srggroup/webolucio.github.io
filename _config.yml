@@ -3,16 +3,16 @@ repository: srggroup/srgcms2
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Webolucio Help
+topnav_title: CMS dokumentáció
 # this appears on the top navigation bar next to the home button
 
-site_title: Webolucio User Documentations
+site_title: Webolucio Felhasználói dokumentáció
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: SRG Group Kft.
 # this appears in the footer
 
-github_editme_path: srggroup/srgcms2
+#github_editme_path: srggroup/srgcms2
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # disqus_shortname: idrbwjekyll
@@ -34,7 +34,7 @@ feedback_subject_line: Webolucio Help
 feedback_email: dev@srg.hu
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"

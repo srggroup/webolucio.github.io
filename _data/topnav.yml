@@ -3,6 +3,6 @@
 topnav:
 - title: Topnav
   items:
-    - title: Administration area
+    - title: Adminisztrációs felület
       url: /cmsadmin_index.html
 
